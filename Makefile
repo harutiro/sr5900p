@@ -1,6 +1,9 @@
 build:
 	cargo build --release
 
+build_linux:
+	cargo build --target=x86_64-unknown-linux-gnu --release
+
 clippy:
 	cargo clippy -- -D warnings
 
